@@ -1,96 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Your favourite music is here</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Anushka's - Devloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&
+    display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(61, 10, 109);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(53, 7, 96)
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(125, 125, 241);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(191, 143, 236);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+        }
+
+        .leftSection .buttons {
+
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: rgb(101, 32, 166);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+
+            width: 120%;
+
+        }
+
+        .purple {
+            color: rgb(186, 138, 231);
+        }
+
+        .text-gray {
+            color: gray;
+
+
+
+        }
+
+        #element {
+            color: rgb(176, 111, 237)
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font: size 1.9em;
+            ;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 130px;
+        }
+
+        .image-top {
+            width: 46px;
+            position: reletive;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+
+        footer {
+            background-color: rgb(45, 14, 74);
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 100px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
 </head>
+
 <body>
-    <nav>
+    <header>
+        <nav>
+            <div class="left">Anushka's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Service</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Anushka</span>
+                <div>and i am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="971.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far.</span>
+            <h1>Work Experience</h1>
 
-        <ul>
-            
-            <li class="brand"> <img src="logo.png" alt="Spotify">Spotify</li>
-            <li>home</li>
-<li>About</li>
-            
-        </ul>
-    </nav>
-    <div class="container">
-        
-        <div class="songlist">
-             <h1>Best of NCS - no copyright Sounds</h1>
-             <div class="songItemContainer">
-                
-                
-                 <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="21004063.png" alt="">
+                    <div class="vertical-title">
+                        INTRENSALA INTERNSHIP
+                    </div>
+                    <div class="vertical-desc">
+                        I succesfully completed my core java courses.This course helped me build a soid foundation
+                        in object oriented programming.I am very excited to apply these skils in real world.
+                    </div>
                 </div>
-                 <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
+                <div class="vertical">
+                    <img class="image-top" src="21004063.png" alt="">
+                    <div class="vertical-title">
+                        INNOVATE INTERN
+                    </div>
+                    <div class="vertical-desc">
+                        I succesfully completed my 4 week internshipin AIML .This internship has truly deepenedmy understanding and interest
+                        in the field of AIML.I have done one Project on Click Through Rate Prediction using machine learning.
+                    </div>
                 </div>
-                 <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
+                <div class="vertical">
+                    <img class="image-top" src="21004063.png" alt="">
+                    <div class="vertical-title">
+                        FULL STACK DEVLOPMENT
+                    </div>
+                    <div class="vertical-desc">
+                        Now, pursuing my Full Stack Devlopement with java. And aiming to use my skills in java in real world projects.
+                        This is one of the intresting language through which we can create big to big projects.
+                    </div>
                 </div>
-                 <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
+                <div class="vertical">
+                    <img class="image-top" src="21004063.png" alt="">
+                    <div class="vertical-title">
+                        HTML CSS JAVASCRIPT
+                    </div>
+                    <div class="vertical-desc">
+                        Learning These, things has made my skills a bit higher.
+                        love to projects on html,css,and javascript.
+                        now,intermidiate in these things.
+                    </div>
                 </div>
-                <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
-                </div><div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
-                </div><div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
-                </div><div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
-                </div>
-                <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
-                </div>
-                 <div class="songItem">
-                 <img src="cover.jpg" alt="1"> 
-                 <span>let me love you</span>
-                 <span class="songlistplay"><span class="timestamp">05:34<i class=" fa-solid fa-play"></i></span></span>  
-                </div>
-             </div>
+
+
+
+        </section>
+    </main>
+    <FOOTER>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Anushka's Devloper Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
         </div>
-        <div class="songbanner"></div>
-    </div>
+        <div class="footer-rights">
 
+            Copyright &#169; anushka'sportfolio.com | All rights reserved
+        </div>
+    </FOOTER>
 
-    <div class="bottom">
-         <input type="range" name="range" id="myprogressbar" min="0" value="0" max ="100">
-         <div class="icons">
-            <i class="fa-3x fa-solid fa-step-backward"></i>
-         <i class="fa-3x fa-solid fa-play"></i>
-         <i class="fa-3x fa-solid fa-step-forward"></i>       
-            
-            
-         </div>
-         <div class="songinfo">
-            <img src="playing.gif" width="42px" alt="" id="gif">let me love you-justin beiber
-         </div>
-    </div>
-    <script src="https://kit.fontawesome.com/798817c933.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper..', 'Full Stack Devloper..', 'Video Editor..'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
